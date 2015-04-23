@@ -80,6 +80,19 @@
     <Content Include="Scripts\jquery-2.1.3.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Modelo\Artificiales.cs" />
+    <Compile Include="Modelo\Caracterizacion.cs" />
+    <Compile Include="Modelo\Armas.cs" />
+    <Compile Include="Modelo\Debilidades.cs" />
+    <Compile Include="Modelo\Habilidades.cs" />
+    <Compile Include="Modelo\Humanos.cs" />
+    <Compile Include="Modelo\IFicha.cs" />
+    <Compile Include="Modelo\Aliens.cs" />
+    <Compile Include="Modelo\Mutantes.cs" />
+    <Compile Include="Modelo\Personajes.cs" />
+    <Compile Include="Modelo\Personalidad.cs" />
+    <Compile Include="Modelo\Poderes.cs" />
+    <Compile Include="Modelo\SuperHumanos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -92,7 +105,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Datos\" />
-    <Folder Include="Modelo\" />
     <Folder Include="Web\" />
   </ItemGroup>
   <PropertyGroup>
