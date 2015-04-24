@@ -8,6 +8,8 @@ namespace App.Modelo
 {
     interface IFicha
     {
-        string aggregar(Caracterizacion p);
+        void Add(Caracterizacion carz1);
+        void Enemigo(Personajes prn);
+        string Liga(string liga);
     }
 }

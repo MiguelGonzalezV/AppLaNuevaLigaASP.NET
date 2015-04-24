@@ -7,10 +7,14 @@ namespace App.Modelo
 {
     public abstract class Caracterizacion
     {
+        #region "Constructores"
         public Caracterizacion()
         {
           
         }
+        #endregion
+
+        #region "Métodos SobreEscritos"
         public override string ToString()
         {
             return base.ToString();
@@ -23,5 +27,6 @@ namespace App.Modelo
         {
             return base.GetHashCode();
         }
+        #endregion
     }
 }
