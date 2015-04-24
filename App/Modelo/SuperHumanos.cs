@@ -9,8 +9,9 @@ namespace App.Modelo
     {
         #region "Atributos"
         private string traje;
-        private List<Caracterizacion> caracterizacion = new List<Caracterizacion>();
-        private List<Personajes> enemigo = new List<Personajes>();
+        private static List<Caracterizacion> caracterizacion = new List<Caracterizacion>();
+        private static List<Personajes> enemigo = new List<Personajes>();
+        private static string liga1="";
         #endregion
 
         #region "Propiedades"
@@ -66,9 +67,9 @@ namespace App.Modelo
         {
             enemigo.Add(persn);
         }
-        public string Liga(string liga)
+        public void Liga(string liga)
         {
-            return "\nLiga = " + liga;
+            liga1 = liga;
         }
         #endregion
 
@@ -77,15 +78,19 @@ namespace App.Modelo
         {
             string result = "";
             foreach (Personajes persn in enemigo)
-                result += "\n" + persn;
+                result += "\n" + persn.Nombre;
             return "\nEnemigo= " + result;
         }
         public override string imprimirCaracterizaciones()
         {
             string result = "";
             foreach (Caracterizacion carc in caracterizacion)
-                result += "\n" + carc;
+                result += "\n" + carc.ToString();
             return "\nCaracterización= " + result;
+        }
+        public override string liga()
+        {
+            return "Liga: "+liga1.ToString();
         }
         #endregion
     }

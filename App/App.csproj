@@ -80,6 +80,7 @@
     <Content Include="Web\CreateCaracterizacion.aspx" />
     <Content Include="Web\CreatePersonajes.aspx" />
     <Content Include="Web\Default.aspx" />
+    <Content Include="Web\ListPersonajes.aspx" />
     <Content Include="Web\Plantilla.Master" />
   </ItemGroup>
   <ItemGroup>
@@ -119,6 +120,13 @@
     </Compile>
     <Compile Include="Web\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\ListPersonajes.aspx.cs">
+      <DependentUpon>ListPersonajes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\ListPersonajes.aspx.designer.cs">
+      <DependentUpon>ListPersonajes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Web\Plantilla.Master.cs">
       <DependentUpon>Plantilla.Master</DependentUpon>

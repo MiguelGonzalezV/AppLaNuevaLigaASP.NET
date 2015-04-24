@@ -15,22 +15,22 @@ namespace App.Modelo
         #endregion
 
         #region "Propiedades"
-        protected string Sexo
+        public string Sexo
         {
             get { return sexo; }
             set { sexo = value; }
         }
-        protected string Complexion
+        public string Complexion
         {
             get { return complexion; }
             set { complexion = value; }
         }
-        protected string Nombre
+        public string Nombre
         {
             get { return nombre; }
             set { nombre = value; }
         }
-        protected string Modalidad
+        public string Modalidad
         {
             get { return modalidad; }
             set { modalidad = value; }
@@ -82,6 +82,7 @@ namespace App.Modelo
         #endregion
 
         #region "Abstractos"
+        public abstract string liga();
         public abstract string imprimirEnemigo();
         public abstract string imprimirCaracterizaciones();
         #endregion

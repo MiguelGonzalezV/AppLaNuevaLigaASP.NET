@@ -12,6 +12,7 @@ namespace App.Modelo
         private string tipoEspecie;
         private List<Caracterizacion> caracterizacion = new List<Caracterizacion>();
         private List<Personajes> enemigo = new List<Personajes>();
+        private static string liga1 = "";
         #endregion
 
         #region "Propiedades"
@@ -76,9 +77,9 @@ namespace App.Modelo
         {
             enemigo.Add(persn);
         }
-        public string Liga(string liga)
+        public void Liga(string liga)
         {
-            return "\nLiga = " + liga;
+            liga1 = liga;
         }
         #endregion
 
@@ -96,6 +97,10 @@ namespace App.Modelo
             foreach (Caracterizacion carc in caracterizacion)
                 result += "\n" + carc;
             return "\nCaracterización= " + result;
+        }
+        public override string liga()
+        {
+            return "Liga: "+liga1.ToString();
         }
         #endregion
 

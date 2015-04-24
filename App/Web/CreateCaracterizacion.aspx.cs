@@ -38,7 +38,7 @@ namespace App.Web
             pp.Armas(carac3);
             pp.Personalidad(carac4);
             pp.Debilidades(carac5);
-            Server.Transfer("CreatePersonajes.aspx");
+            Response.Redirect("CreatePersonajes.aspx");
         }
     }
 }

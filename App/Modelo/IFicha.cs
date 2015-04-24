@@ -10,6 +10,6 @@ namespace App.Modelo
     {
         void Add(Caracterizacion carz1);
         void Enemigo(Personajes prn);
-        string Liga(string liga);
+        void Liga(string liga);
     }
 }
