@@ -78,13 +78,13 @@ namespace App.Modelo
         {
             string result = "";
             foreach (Personajes persn in enemigo)
-                result += "\n" + persn.Nombre;
+                result += "\n" + persn.Nombre.ToString();
             return "\nEnemigo= " + result;
         }
         public override string imprimirCaracterizaciones()
         {
             string result = "";
-            foreach (Caracterizacion carc in caracterizacion)
+            foreach (Poderes carc in caracterizacion)
                 result += "\n" + carc.ToString();
             return "\nCaracterización= " + result;
         }
