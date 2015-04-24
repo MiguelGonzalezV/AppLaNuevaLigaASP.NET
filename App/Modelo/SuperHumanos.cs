@@ -77,16 +77,16 @@ namespace App.Modelo
         public override string imprimirEnemigo()
         {
             string result = "";
-            foreach (Personajes persn in enemigo)
-                result += "\n" + persn.Nombre.ToString();
-            return "\nEnemigo= " + result;
+            foreach (Personajes carc in enemigo)
+                result += "\n" + carc;
+            return "\nEnemigos= " + result.ToString();
         }
         public override string imprimirCaracterizaciones()
         {
             string result = "";
-            foreach (Poderes carc in caracterizacion)
-                result += "\n" + carc.ToString();
-            return "\nCaracterización= " + result;
+            foreach (Caracterizacion carc in caracterizacion)
+                result += "\n" + carc;
+            return "\nCaracterización= " + result.ToString();
         }
         public override string liga()
         {

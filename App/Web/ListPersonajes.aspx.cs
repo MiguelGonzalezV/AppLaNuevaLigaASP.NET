@@ -18,6 +18,7 @@ namespace App.Web
             foreach (Personajes p in per.getPersonaje())
                 result += p.ToString().Replace("\n", "</br>") + p.imprimirEnemigo().Replace("\n", "</br>") + p.imprimirCaracterizaciones().Replace("\n", "</br>") + p.liga().Replace("\n", "</br>");
             Label1.Text = result;
+      
         }
     }
 }
