@@ -17,15 +17,15 @@ namespace App.Modelo
         #region "Métodos SobreEscritos"
         public override string ToString()
         {
-            return base.ToString();
+            return "";
         }
         public override bool Equals(object obj)
         {
-            return base.Equals(obj);
+            return Equals(obj);
         }
         public override int GetHashCode()
         {
-            return base.GetHashCode();
+            return this.ToString().GetHashCode();
         }
         #endregion
     }

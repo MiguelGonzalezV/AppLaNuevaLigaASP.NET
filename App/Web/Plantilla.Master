@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Plantilla.master.cs" Inherits="App.Web.Plantilla" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>App La Nueva Liga</title>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+    function mostrar(id) {
+        if (id == "humano") {
+            $("#humano").show();
+            $("#superhumano").hide();
+            $("#mutante").hide();
+            $("#aliens").hide();
+            $("#artificial").hide();
+        }
+
+        if (id == "superhumano") {
+            $("#humano").hide();
+            $("#superhumano").show(); 
+            $("#mutante").hide();
+            $("#aliens").hide();
+            $("#artificial").hide();
+        }
+
+        if (id == "mutante") {
+            $("#humano").hide();
+            $("#superhumano").hide();
+            $("#mutante").show(); 
+            $("#aliens").hide();
+            $("#artificial").hide()
+        }
+        if (id == "aliens") {
+            $("#humano").hide();
+            $("#superhumano").hide();
+            $("#mutante").hide();
+            $("#aliens").show();
+            $("#artificial").hide();
+        }
+        if (id == "artificial") {
+            $("#humano").hide();
+            $("#superhumano").hide();
+            $("#mutante").hide();
+            $("#aliens").hide();
+            $("#artificial").show();
+        }
+
+    }
+</script>
+</head>
+<body>
+
+
+
+    <form id="form1" runat="server">
+    <div>
+        <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">App La Nueva Liga</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="Default.aspx">Home</a></li>
+        <li><a href="CreateCaracterizacion.aspx">Crear Caracterización</a></li>
+        <li><a href="CreatePersonajes.aspx">Crear Personajes</a></li>
+        <li><a href="ListPersonajes.aspx">Listar Personajes</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    <script src="../Scripts/jquery-2.1.3.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+</body>
+</html>
